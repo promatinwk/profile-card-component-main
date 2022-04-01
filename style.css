@@ -152,4 +152,19 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+
+@media only screen and (min-width: 1440px) {
+  body {
+    background-position: -100% 600%, 200% -500%;
+    background-repeat: no-repeat;
+  }
+  .sm-profile {
+    width: 28%;
+    height: 50vh;
+    background-size: contain;
+  }
+  .sm-profile .user__photo {
+    top: -40%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
