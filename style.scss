@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-position: -50% 180%, -20% -80%;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    
+}
+
+.sm-profile{
+    height: 60vh;
+    width: 90%;
+    background-color: white;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 15px;
+
+    .user{
+       position: relative;
+       height: 40%;
+       &__photo{
+           position: absolute;
+           top: -50%;
+           left: 50%;
+           transform: translateX(-50%);
+           border-radius: 50%;
+           border: 7px solid white;
+       }
+
+       &__data{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           p{
+               width: 100%;
+               text-align: center;
+           }
+       }
+
+       &__name{
+           font-size: 18px;
+           font-weight: 700;
+        
+           
+       }
+
+       &__age{
+           margin-left: 2%;
+           color:hsl(0, 0%, 59%);
+       }
+
+       &__city{
+           color: hsl(0, 0%, 59%);
+       }
+
+       &:after{
+           content: '';
+           position: absolute;
+           width: 100%;
+           height: 2px;
+           background-color: hsla(0, 0%, 59%,0.3);
+       }
+
+    }    
+    .stats{
+        height: 20%;
+        display: flex;
+        width: 100%;
+        div{
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    &__result{
+        font-weight: 700;
+    }
+
+    &__title{
+        color: hsl(0, 0%, 59%);
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+
+
+    }
+}
+
+
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    bottom: 2px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
