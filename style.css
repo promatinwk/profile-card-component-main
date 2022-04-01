@@ -153,7 +153,7 @@ body {
   color: #3e52a3;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 400px) and (max-width: 1440px) {
   body {
     background-position: -100% 600%, 200% -500%;
     background-repeat: no-repeat;
@@ -165,6 +165,18 @@ body {
   }
   .sm-profile .user__photo {
     top: -40%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  body {
+    background-position: -50% 600%, 150% -500%;
+    background-repeat: no-repeat;
+  }
+  .sm-profile {
+    width: 20%;
+    height: 50vh;
+    background-size: contain;
   }
 }
 /*# sourceMappingURL=style.css.map */
